@@ -6,7 +6,7 @@ jobs:
   build:
 
     #runs-on: ubuntu-latest
-    runs-on: [self-hosted, macos]
+    runs-on: [self-hosted, mac-os]
     
     steps:
       - uses: actions/checkout@master
