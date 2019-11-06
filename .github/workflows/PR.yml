@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - uses: actions/checkout@master
       - run: |
           echo "::add-matcher::$PWD/csc.json"
           echo '##[error]SnippetParsing.cs(7,2): error CS1022: Type or namespace definition, or end-of-file expected [/home/runner/work/bumblebee/bumblebee/BumblebeeTests/BumblebeeTests.csproj]'
-      - uses: actions/checkout@master
     
 #      - name: Install .NET Core SDK
  #       uses: actions/setup-dotnet@v1
